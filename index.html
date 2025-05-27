@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelTales - Exclusive Tour Packages</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="plane-emoji">✈️</div>
+            <p>Preparing Your Adventure...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="navigation">
+            <div class="img_logo">
+                <h2>TravelTales</h2>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#tours" class="nav-link">Tours</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+            <div class="mobile-menu-toggle">☰</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="tag">
+                <h3>Explore the World</h3>
+            </div>
+            <div class="written">
+                <h1>Embark on Your <br> <span class="typewriter-container">
+                        <span class="typewriter-text"></span>
+                    </span></h1>
+                <p>Discover breathtaking destinations with our curated travel packages.</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#tours" class="herobtn primary-btn" id="explore-btn">Explore Tours</a>
+                <button class="herobtn secondary-btn" id="book-btn">Book Now</button>
+            </div>
+        </div>
+        <div class="heroimage">
+            <div class="travel-showcase">
+                <div class="floating-travel">✈️</div>
+                <div class="floating-travel">🗺️</div>
+                <div class="floating-travel">🏝️</div>
+                <div class="floating-travel">⛰️</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-header">
+            <h2>Why Travel With Us</h2>
+            <p>Experience seamless and unforgettable journeys with our expertise.</p>
+        </div>
+        <div class="cosection">
+            <div class="feature-card">
+                <div class="feature-icon">🗺️</div>
+                <div class="feature-content">
+                    <h4>Curated Itineraries</h4>
+                    <p>Tailored travel plans for immersive experiences.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <div class="feature-content">
+                    <h4>24/7 Support</h4>
+                    <p>Round-the-clock assistance for a worry-free trip.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <div class="feature-content">
+                    <h4>Global Destinations</h4>
+                    <p>Explore both Indian and international locales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="tours-section">
+        <div class="section-header">
+            <h2>Our Tour Packages</h2>
+            <p>Discover domestic and international adventures tailored for you.</p>
+        </div>
+        <div class="tour-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="domestic">Domestic</button>
+            <button class="category-btn" data-category="international">International</button>
+        </div>
+        <div class="tour-grid">
+            <div class="tour-item" data-category="domestic">
+                <div class="tour-item-image">
+                    <img src="kerala-backwaters.jpg" alt="Kerala Backwaters" class="tour-item-img">
+                    <div class="item-overlay">
+                        <button class="add-to-cart" data-item="Kerala Backwaters" data-price="25000">➕</button>
+                    </div>
+                </div>
+                <div class="tour-item-content">
+                    <h4>Kerala Backwaters</h4>
+                    <p>Cruise through serene backwaters and lush greenery in Kerala.</p>
+                    <div class="price">₹25,000</div>
+                </div>
+            </div>
+            <div class="tour-item" data-category="domestic">
+                <div class="tour-item-image">
+                    <img src="rajasthan-safari.jpg" alt="Rajasthan Safari" class="tour-item-img">
+                    <div class="item-overlay">
+                        <button class="add-to-cart" data-item="Rajasthan Safari" data-price="30000">➕</button>
+                    </div>
+                </div>
+                <div class="tour-item-content">
+                    <h4>Rajasthan Safari</h4>
+                    <p>Explore majestic forts and golden deserts in Rajasthan.</p>
+                    <div class="price">₹30,000</div>
+                </div>
+            </div>
+            <div class="tour-item" data-category="international">
+                <div class="tour-item-image">
+                    <img src="paris-getaway.jpg" alt="Paris Getaway" class="tour-item-img">
+                    <div class="item-overlay">
+                        <button class="add-to-cart" data-item="Paris Getaway" data-price="80000">➕</button>
+                    </div>
+                </div>
+                <div class="tour-item-content">
+                    <h4>Paris Getaway</h4>
+                    <p>Experience romance and culture in the City of Lights.</p>
+                    <div class="price">₹80,000</div>
+                </div>
+            </div>
+            <div class="tour-item" data-category="international">
+                <div class="tour-item-image">
+                    <img src="bali-paradise.jpg" alt="Bali Paradise" class="tour-item-img">
+                    <div class="item-overlay">
+                        <button class="add-to-cart" data-item="Bali Paradise" data-price="60000">➕</button>
+                    </div>
+                </div>
+                <div class="tour-item-content">
+                    <h4>Bali Paradise</h4>
+                    <p>Relax in tropical beaches and vibrant culture of Bali.</p>
+                    <div class="price">₹60,000</div>
+                </div>
+            </div>
+            <div class="tour-item" data-category="domestic">
+                <div class="tour-item-image">
+                    <img src="himalayan-trek.jpg" alt="Himalayan Trek" class="tour-item-img">
+                    <div class="item-overlay">
+                        <button class="add-to-cart" data-item="Himalayan Trek" data-price="35000">➕</button>
+                    </div>
+                </div>
+                <div class="tour-item-content">
+                    <h4>Himalayan Trek</h4>
+                    <p>Adventure through the majestic Himalayan trails.</p>
+                    <div class="price">₹35,000</div>
+                </div>
+            </div>
+            <div class="tour-item" data-category="international">
+                <div class="tour-item-image">
+                    <img src="japan-explorer.jpg" alt="Japan Explorer" class="tour-item-img">
+                    <div class="item-overlay">
+                        <button class="add-to-cart" data-item="Japan Explorer" data-price="90000">➕</button>
+                    </div>
+                </div>
+                <div class="tour-item-content">
+                    <h4>Japan Explorer</h4>
+                    <p>Discover ancient temples and modern cities in Japan.</p>
+                    <div class="price">₹90,000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h3>About TravelTales</h3>
+                <p>At TravelTales, we craft unforgettable travel experiences, blending adventure, culture, and comfort. Explore India and the world with our expertly curated tours.</p>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <h4>15K+</h4>
+                    <p>Happy Travelers</p>
+                </div>
+                <div class="stat">
+                    <h4>100+</h4>
+                    <p>Destinations</p>
+                </div>
+                <div class="stat">
+                    <h4>4.9⭐</h4>
+                    <p>Average Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>TravelTales</h2>
+                <p>Embark on your dream journey with us.</p>
+                <div class="social-links">
+                    <div class="social-icon">📘</div>
+                    <div class="social-icon">🐦</div>
+                    <div class="social-icon">📷</div>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <div class="footer-link" data-action="track-booking">Track Booking</div>
+                <div class="footer-link" data-action="new-tour">Book a Tour</div>
+                <div class="footer-link" data-action="contact">Contact</div>
+            </div>
+            <div class="footer-section links">
+                <h3>Resources</h3>
+                <div class="footer-link" data-action="blog">Travel Blog</div>
+                <div class="footer-link" data-action="about">About Us</div>
+                <div class="footer-link" data-action="privacy">Privacy Policy</div>
+                <div class="footer-link" data-action="terms">Terms & Conditions</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 TravelTales. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Bookings 🛒</h3>
+            <button id="close-cart">✖</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your bookings are empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">Total: ₹<span id="cart-total">0.00</span></div>
+            <button class="checkout-btn" id="checkout-btn">Confirm Booking 🛒</button>
+        </div>
+    </div>
+
+    <!-- Cart Icon -->
+    <div id="cart-icon" class="cart-icon">
+        🛒
+        <span id="cart-count" class="cart-count">0</span>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <span id="toast-message"></span>
+    </div>
+</body>
+</html>
